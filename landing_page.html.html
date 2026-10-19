@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="设备状态与钱包活动管理平台介绍">
+  <title>Agent Portal | 管理平台</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #08111e;
+      color: #edf4ff;
+      line-height: 1.7;
+    }
+    a { text-decoration: none; }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 6%;
+      border-bottom: 1px solid #213047;
+    }
+    .brand { font-size: 20px; font-weight: 700; }
+    .brand span { color: #52e4cb; }
+    .nav a { color: #d3e0f0; }
+    .hero {
+      max-width: 1000px;
+      margin: auto;
+      padding: 80px 22px 65px;
+      text-align: center;
+    }
+    .pill {
+      display: inline-block;
+      color: #64ead4;
+      border: 1px solid #286a65;
+      border-radius: 30px;
+      padding: 5px 14px;
+      font-size: 13px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 56px);
+      line-height: 1.2;
+      margin: 24px 0 18px;
+    }
+    h1 span { color: #52e4cb; }
+    .intro {
+      max-width: 650px;
+      margin: auto;
+      color: #a8bad0;
+    }
+    .actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 9px;
+      font-weight: 700;
+    }
+    .primary { background: #52e4cb; color: #071820; }
+    .secondary {
+      border: 1px solid #3a506a;
+      color: #edf4ff;
+    }
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 40px 22px;
+    }
+    h2 { text-align: center; font-size: 28px; }
+    .sub {
+      color: #a8bad0;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+    .card {
+      padding: 24px;
+      background: #101d2e;
+      border: 1px solid #25374c;
+      border-radius: 14px;
+    }
+    .number { color: #52e4cb; font-size: 13px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #a8bad0; font-size: 14px; }
+    .notice {
+      background: #101d2e;
+      border: 1px solid #25374c;
+      border-radius: 14px;
+      padding: 26px;
+    }
+    footer {
+      padding: 25px 18px;
+      text-align: center;
+      color: #8da1b8;
+      font-size: 13px;
+      border-top: 1px solid #213047;
+    }
+    @media (max-width: 700px) {
+      .hero { padding-top: 55px; }
+      .grid { grid-template-columns: 1fr; }
+      .actions { flex-direction: column; }
+      .btn { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">AGENT <span>PORTAL</span></div>
+    <a href="#features">平台介绍 ↓</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill">设备与活动管理</div>
+      <h1>让管理更清晰<br><span>让状态一目了然</span></h1>
+      <p class="intro">
+        通过清晰的状态信息与管理流程，
+        帮助团队了解已授权设备的运行情况，
+        并查看公开或已授权的钱包活动信息。
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#features">了解平台功能</a>
+        <a class="btn secondary" href="#contact">联系团队</a>
+      </div>
+    </section>
+
+    <section id="features">
+      <h2>平台功能介绍</h2>
+      <p class="sub">以透明、清晰和授权管理为设计原则</p>
+      <div class="grid">
+        <article class="card">
+          <div class="number">FEATURE 01</div>
+          <h3>设备状态</h3>
+          <p>展示已授权设备的在线状态、最近更新时间与运行信息。</p>
+        </article>
+        <article class="card">
+          <div class="number">FEATURE 02</div>
+          <h3>活动概览</h3>
+          <p>帮助用户整理已授权的数据来源和活动记录，方便日常查看。</p>
+        </article>
+        <article class="card">
+          <div class="number">FEATURE 03</div>
+          <h3>权限与安全</h3>
+          <p>明确数据访问权限，提供撤销授权与联系支持的说明。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="notice">
+        <h2>了解更多</h2>
+        <p class="sub">
+          请在这里填写你自己的真实服务介绍与官方联系方式。
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#features">查看功能</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>独立制作的宣传页面，与其他平台无隶属关系，除非另有明确授权。</p>
+    <p>请勿向任何人提供钱包私钥、助记词或密码。</p>
+  </footer>
+</body>
+</html>
